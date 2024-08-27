@@ -1,0 +1,21 @@
+{
+  "name": "test-eas",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "create-schema": "bun run createSchema.ts",
+    "check-attestation": "bun run checkAttestation.ts",
+    "create-attestation": "bun run createAttestation.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@ethereum-attestation-service/eas-sdk": "^2.6.0",
+    "graphql-request": "^7.1.0",
+    "viem": "^2.20.1"
+  }
+}
